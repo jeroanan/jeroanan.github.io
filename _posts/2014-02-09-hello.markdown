@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Hello World"
+date:   2014-02-09 10:35:00
+categories: intro
+---
+ 
+Hello,
+
+I'll be using this space to talk about my development work in general. By day I'm a .Net developer. By night I mostly work in Python under Linux. My main project is <a href="http://github.com/jeroanan/Aquarius">Aquarius</a>, which I've been working on in some form or other since September last year. I plan to write about my experiences with that, as well as other cool stuff I find in my technological life.
