@@ -7,7 +7,7 @@ categories: Aquarius, python, opensource
 
 Speaking to a lot of friends and colleagues who don't do much coding in their spare time, I hear the same kind of thing all the time: "I would, but I don't know what to code." I was in this situation too, and it took me several years to work it out.
 
-When I graduated from university, I had high hopes. "I'll work for a company all day and work on open source all night," I thought. It didn't happen like that. In fact I didn't code anything in my spare time for years after. Until one morning I woke up and thought "I want my love of coding back".
+When I graduated from university, I had high hopes. "I'll work for a company all day and work on open source all night," I thought. It didn't happen like that. In fact I didn't code anything in my spare time for years after. Until one morning when I woke up and thought "I want my love of coding back".
 
 The first question I asked myself was "what am I interested in other than coding?" My big spare time activity since graduating from university had always been reading. You can see how much time I spent reading over at my <a href="https://www.goodreads.com/user/show/13603481-david-wilson">Goodreads</a> profile. I have a large collection of ebook files in various formats and usually read them using Moon+ Reader on my Nexus 7. I had recently taken delivery of a Raspberry Pi, so I thought it would be cool to write a lightweight server that I can put on the Pi to manage my collection using either a normal web front-end or the OPDS protocol, which Moon+ can handle.
 
