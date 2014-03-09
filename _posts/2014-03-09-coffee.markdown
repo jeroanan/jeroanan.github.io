@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "CoffeeScript"
+date:   2014-03-09 16:00:00
+categories: coding, CoffeeScript, JavaScript
+---
+
+This week I've been playing quite a bit with <a href="http://coffeescript.org/">CoffeeScript</a>, a language that compiles down into JavaScript. The idea is that CoffeeScript code is much more concise and easier to follow than the JavaScript equivalent. Here's a "fizzbuzz" script in CoffeeScript:
+
+{%gist 9449898%}
+
+As a Python man I find this to be quite nice. No ugly braces. The code reads to me a lot like English prose. It's indentation-delimeted. Even better is just how much shorter the CoffeeScript is than the JavaScript. Here's the compiled output for the above code:
+
+{%gist 9449982%}
+
+...Admittedly a lot of the difference here is from getting rid of the braces. Fizzbuzz is about the simplest kata out there, and I've found that the CoffeeScript's brevity is more pronounced when the problem is a bit more complex. The difference can perhaps be seen better in the <a href="https://github.com/jeroanan/CoffeeScriptKatas/tree/master/romannumeralstdd">Roman numerals kata</a> I did and saved on my Github.
+
+I'm looking forward to getting into CoffeeScript a bit more. So far I've just done a couple of katas with it and am trying to think of something more "real" that I could write. With a combination of this, jsTestDriver and node.js hopefully I can think of something cool I can do with it. 
