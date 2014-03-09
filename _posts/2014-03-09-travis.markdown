@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Continuous integration for Aquarius"
+date:   2014-03-09 21:30:00
+categories: Aquarius
+---
+
+I encountered some unexepected coolness tonight while browsing the <a href="https://github.com/jekyll/jekyll">Jekyll</a> repository:
+
+1. <a href="https://travis-ci.org/">Travis CI</a>
+2. <a href="https://coveralls.io">Coveralls</a>
+
+Travis CI hooks into Github repos and waits for pushes and pull requests. Then, (for Aquarius, written in Python) it checks out the repo, installs the dependencies specified in .travis.yml and runs a build script, in my case, a unit testing command. Once that's all done you get a pass or fail and a pretty badge to put in your project's README.md. If it fails, it sends you an email to tell you.
+
+Here is Aquarius's .travis.yml:
+
+{% gist 9455487 .travis.yml %}
+
+.travis.yml drives the whole build. For my first few builds I left the "install" section blank, and leaned on the build errors to tell me which dependencies to include. Note that only dependencies required to get throught the "script" section are needed. In Aquarius's case, I didn't need to specify sqlite3 here, even though it's a dependency of the application itself. That's because I deliberately do not unit test calls to the external database.
+
+With all that set up I can put this in Aquarius's README.md: <img src="https://travis-ci.org/jeroanan/Aquarius.png?branch=master" />
+
+In the bottom line of my .travis.yml there is a call to "coveralls". Coveralls takes successful Travis CI builds and looks at their unit test coverage. It then generates another pretty badge to put in your project's README.md.
+
+I've always prided myself on keeping Aquarius's unit test coverage in 90%+ territory, so I was shocked when coverall's first run of my code came back in at 37%. That was because my unit testing tool of choice, nosetests, doesn't differentiate between imported libraries and my code when it runs. Unfortunately I only cover 23/209 statements in 	...lib/python3.3/site-packages/cherrypy/lib/static.py, and I have no intention of deliberately covering any more of it, so clearly I need to make nosetests ignore it. Luckily, nosetests respects .coveragerc, so I can set it to omit pretty much anything that falls outside of my repository:
+
+{% gist 9455487 .coveragerc %}
+
+When my next build happened, it came out at 95%. Much more like it! :) That gives me this pretty badge: <a href='https://coveralls.io/r/jeroanan/Aquarius?branch=master'><img src='https://coveralls.io/repos/jeroanan/Aquarius/badge.png?branch=master' alt='Coverage Status' /></a>
+
+So in one night, I have continuous integration for my project. Very cool; never again will I have to worry about my working copy being non-reflective of what would get checked out. I also have publicly-visible unit test coverage, which helps with my aim of transparent development.
