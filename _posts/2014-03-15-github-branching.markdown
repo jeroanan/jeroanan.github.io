@@ -3,6 +3,7 @@ layout: post
 title:  "Trying Github Features: Branching"
 date:   2014-03-15 21:00:00
 categories: coding, Github
+comments: true
 ---
 
 This week I've tried using a couple of features of Github that I'm new to: branching and issues. I've found them to be pretty useful additions to my development toolkit, and I'll continue to use them while developing <a href="https://github.com/jeroanan/Aquarius">Aquarius</a> in future. I will talk about branching in this post, and post about my experiences with issues in the next day or so.

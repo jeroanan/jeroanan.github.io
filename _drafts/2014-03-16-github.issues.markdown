@@ -3,6 +3,7 @@ layout: post
 title:  "Trying Github Features: Issues"
 date:   2014-03-16 12:00:00
 categories: coding, Github
+comments: true
 ---
 
 In the past week I've begun to use another feature of Github that I've come to really like: issues. Each Github repository has an issues tab that can be used to keep track of bug reports and feature requests.

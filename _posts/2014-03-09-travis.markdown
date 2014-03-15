@@ -3,6 +3,7 @@ layout: post
 title:  "Continuous integration for Aquarius"
 date:   2014-03-09 21:30:00
 categories: Aquarius
+comments: true
 ---
 
 I encountered some unexepected coolness tonight while browsing the <a href="https://github.com/jekyll/jekyll">Jekyll</a> repository:
@@ -29,3 +30,4 @@ I've always prided myself on keeping Aquarius's unit test coverage in 90%+ terri
 When my next build happened, it came out at 95%. Much more like it! :) That gives me this pretty badge: <a href='https://coveralls.io/r/jeroanan/Aquarius?branch=master'><img src='https://coveralls.io/repos/jeroanan/Aquarius/badge.png?branch=master' alt='Coverage Status' /></a>
 
 So in one night, I have continuous integration for my project. Very cool; never again will I have to worry about my working copy being non-reflective of what would get checked out. I also have publicly-visible unit test coverage, which helps with my aim of transparent development.
+

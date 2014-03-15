@@ -3,6 +3,7 @@ layout: post
 title:  "CoffeeScript"
 date:   2014-03-09 16:00:00
 categories: coding, CoffeeScript, JavaScript
+comments: true
 ---
 
 This week I've been playing quite a bit with <a href="http://coffeescript.org/">CoffeeScript</a>, a language that compiles down into JavaScript. The idea is that CoffeeScript code is much more concise and easier to follow than the JavaScript equivalent. Here's a "fizzbuzz" script in CoffeeScript:
