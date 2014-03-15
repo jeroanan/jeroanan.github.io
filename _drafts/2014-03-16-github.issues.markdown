@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Trying Github Features: Issues"
+date:   2014-03-16 12:00:00
+categories: coding, Github
+---
+
+In the past week I've begun to use another feature of Github that I've come to really like: issues. Each Github repository has an issues tab that can be used to keep track of bug reports and feature requests.
+
+Starting to use issues was really simple: every time I either think of something that I'd like to add to <a href="https://github.com/jeroanan/Aquarius">Aquarius</a>, or when I find a bug, I create an entry in the issues list. I've even posted a couple of "Question" entries -- where I've been unsure about some point in the applicatio and resolved to go and check later.
+
+Creating entries in an issues list has great advantages for me as a developer, and Aquarius as a project:
+
+1. By getting into the habbit of putting things into the issues list as soon as I think of them, I never forget an idea for an enhancement or a bug I found. 
+2. On nights when I don't feel like coding, but I want to work on Aquarius, I can try to break it, or think of directions I'd like to take it in. That all goes on the issues list, and on the nights I want to get down to some coding, I can dive right into one of them items on the list.
+3. If anyone wants to get on board with Aquarius, they can have a look at what's currently needed and, hopefully, dig in.
+
+When I begin working on an item in my issues list, I assign it to myself, so in case of point 3 above, no clashes happen. Issues can be commented upon any commit guids that are pasted into comments are automatically formatted and linked correctly, as can be seen <a href="https://github.com/jeroanan/Aquarius/issues/10">in this issue</a>, where I got quite far in and then commented why I wouldn't be finishing it at that time.
+
+Another nice little feature of the issues functionality that I've been using is the ability to close issues in commit messages. For example: 
+
+{% highlight console %}
+git commit -m "Fix #13."
+{% endhighlight %}
+
+This will cause the issue with Id 13 to be closed when the repository is next pushed. Github will scan the whole of the commit message for a term such as this, so the message can also contain the level of verbosity that the developer wants.
+
+Using an issues list has changed the way that I develop Aquarius. It seems that I am planning what I will be doing more. I am able to work on my project even if I don't feel like doing any actual coding. I am hopefully providing avenues for contributors to get involved in the future.
