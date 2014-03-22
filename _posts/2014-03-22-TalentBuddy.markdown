@@ -7,7 +7,7 @@ comments: true
 ---
 I've spent the last day or so exploring a coding challenge site that I've happened upon: <a href="http://www.talentbuddy.co" />Talentbuddy</a>.
 
-Talentbuddy consists of a bunch of categories, each containing five or six challenges, such as sorting a list of test results, or predicting the increase in visitors to a site over a given number of weeks. Solutions can be entered in a choice of fourteen languages, from C to Python to Clojure. Code is entered directly into an editor in the browser, which supports syntax highlighting, parenthesis matching and so on Pretty nicely.
+Talentbuddy consists of a bunch of categories, each containing five or six challenges, such as sorting a list of test results, or predicting the increase in visitors to a site over a given number of weeks. Solutions can be entered in a choice of fourteen languages, from C to Python to Clojure. Code is entered directly into an editor in the browser, which supports syntax highlighting, parenthesis matching and so on pretty nicely.
 
 Once a solution has been entered it is checked. If it passes you get some experience points. If it doesn't you get the output, including compiler errors. One thing I quite like is that once I've passed a challenge in, say, Python, I can come back and do it in C and both solutions are saved.
 
