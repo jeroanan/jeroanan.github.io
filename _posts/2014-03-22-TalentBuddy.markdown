@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  TalentBuddy
+title:  Talentbuddy
 date:   2014-03-22 21:00:00
-categories: coding, TalentBuddy
+categories: coding, Talentbuddy
 comments: true
 ---
 I've spent the last day or so exploring a coding challenge site that I've happened upon: <a href="http://www.talentbuddy.co" />Talentbuddy</a>.
