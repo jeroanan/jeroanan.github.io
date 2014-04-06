@@ -37,11 +37,18 @@ Yuck! This is bad for a couple of reasons, but for me the root of it is that the
 
 How did this class get like this? Well, I guess I kind of sleptwalked into it. I'm learning and honing my craft all the time, and this is an example of coming back to a piece of code months later to find it's not what you'd write now.
 
-Anyway, things can't remain like this; the lack of a good definition of business rules is to me a bit of a flaw in Aquarius's design and I really want to play with MongoDB. So, I've started a new branch called "BusinessSeparation". My plan is to have a new module called "interactors" that contain the business rules. For instance I have already committed "AddBookInteractor.py":
+Anyway, things can't remain like this; the lack of a good definition of business rules is to me a bit of a flaw in Aquarius's design and I really want to play with MongoDB. So, I've started a new branch called "BusinessSeparation". My plan is to have a new module called "interactors" that contain the business rules. For instance I have already committed a first go at "AddBookInteractor.py":
 
 {% highlight python %}
 
-# stuff here pls
+class AddBookInteractor(object):
+    def __init__(self, persistence):
+        self.__persistence = persistence
 
+    def execute(self, book):
+        b = self.__persistence.get_book_by_title_and_author(book)
+        if b.id == "":
+            self.__persistence.add_book(book)
+{% endhighlight %}
 
-{% endhiglight %}
+...I plan to rinse and repeat for the other use cases in Aquarius, so for the time being, Aquarius.py calls into the interactors instead of the persistence.
