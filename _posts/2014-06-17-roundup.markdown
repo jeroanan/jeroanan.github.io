@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "Roundup"
+date:   2014-06-17 21:00:00
+categories: roundup
+---
+
+It's been a couple of weeks, so just a quick roundup of the stuff I've been up to/discovering:
+
+### AngularJS
+
+I've spent a bit of time with <a  href="https://angularjs.org/">AngularJS</a>. In a nutshell, AngularJS is a JavaScript 
+framework that provides some cool stuff including:
+ 
+**Two-way binding between the view and models**
+ 
+This means that when values change in your models, parts of the view that rely on that value update automatically. 
+Likewise, when the view changes those values, the model updates right away, so there's no need to write a load of code
+to do all that for you.
+
+**Services**
+
+Service provide a way to encapsulate businessy stuff in your application that can then be called from anywhere within 
+it. Services may make calls to actual REST services to get data, or perform processing in their own right.
+
+**Directives**
+
+I really love directives in AngularJS. They allow you to bundle up a whole bunch of HTML with data bindings into single 
+tag that AngularJS then substitutes at runtime. I find this to be quite an exciting possibility because it perhaps means 
+we can finally get to the point where a specialist designer can write page layouts and developers can write code to
+drive them with greater separation.
+ 
+I followed along with a 
+<a href="http://pluralsight.com/training/Courses/TableOfContents/angularjs-fundamentals">Pluralsight course</a> on 
+AngularJS that was pretty cool, although I did find the pace of the snippets being pasted on-screen a bit fast in the 
+middle 3-4 modules.
+
+### Bootstrap
+
+I've been pretty much blown away by <a href="http://getbootstrap.com/">Bootstrap</a>, a CSS/JavaScript framework for 
+making accessible/responsive/good-looking web pages. Just including it on a new web page with a few bits of text on it
+makes it change to something a bit prettier than the standard browser stylesheet. Getting effects like drop-down menus
+and image carousels is just a few &lt;div tags away. I've also been staggered by how easy it is using Bootstrap and its
+responsive design stylesheet to make sites that look good on any screen size. I've started incorporating it a little 
+bit into the web front-end of <a href="https://github.com/jeroanan/Aquarius">Aquarius</a> for a simple but slick kind 
+of user experience.
+
+Since picking up Bootstrap I've noticed that I see several websites every day that clearly use it, and have that 
+distinct layout with a menubar, followed by a jumbotron and then the main content. I think care should be taken so that
+when using Bootstrap, your page isn't just another one of those cookie cutter sites. 
+
+I watched a <a href="http://pluralsight.com/training/Courses/TableOfContents/bootstrap-introduction">Pluralsight</a>
+course on Bootstrap as well. It was a good course and well delivered but some things in Bootstrap have changed or been
+removed altogether since it was made. For example, the jumbotron used to be called a hero unit, which left me searching
+the web to find out why my hero widget wasn't being made very big. Still, a nice showcase of what Bootstrap is capable 
+of.
+
+### Jetbrains Webstorm
+
+Disclaimer: I'm a bit of a <a href="http://www.jetbrains.com">Jetbrains</a> fanboy and have been using their tools for 
+several years. I got using <a href="http://www.jetbrains.com/webstorm/">Webstorm</a> when I saw it was the tool being
+taught with in the above Pluralsight course on AngularJS, and have since used it for working with Bootstrap, this blog
+and some CoffeeScript. It recognises a tonne of different web languages and  gives me all the rich functionality I've
+grown used to from Jetbrains IDEs. I like it so much I've purchased a licence.
+  
+In short: I've been trying to direct a lot of my study over the last couple of weeks towards the web in general and
+JavaScript in particular. I think JavaScript is the next big thing if it isn't already and I will be continuing to try
+to become awesome at it.
