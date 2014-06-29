@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Jeroanan's Bookshelf"
+title:  "Bookshelf"
 ---
 
 I spend a lot of time when I'm not actually writing code studying. This page is a list of the technology-related books
