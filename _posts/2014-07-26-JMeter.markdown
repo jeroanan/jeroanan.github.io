@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "JMeter"
+date:   2014-07-26 09:00:00
+categories: testing, JMeter
+---
+
+I have spent the last week having great fun using <a href="http://jmeter.apache.org/">Apache JMeter</a>. It is a desktop
+application written in Java that can be used to perform load testing on web applications.
+
+Getting up and running is easy, thanks to the great 
+<a href="http://jmeter.apache.org/usermanual/index.html">User Manual</a>. In essence it's just a matter of adding the
+following three objects to a new project:
+
+**HTTP Request Defaults**
+
+This object defines some defaults for other objects at the same level or lower. I've generally used it to supply a
+web server address/port number for the whole test suite to use.
+
+**Thread Group**
+
+The thread group represents a group of users within the test. You can specify here how many threads will be spawned to
+hit the objects you put underneath it.
+
+**HTTP Request**
+
+Here you set the specific path/query you want the users to send to the web server. POST data can be set as well as
+parameters such as whether JMeter should download linked resources such as scripts and images when doing the request.
+
+Put those three things together, and Bob's your uncle! You can send 1, 50 or 1000 requests to your web site! In addition
+I like to add a listener such as "View Results in Table" or "View Results in Tree" so that I can see what happened as
+the requests are fulfilled.
+
+Of course, by doing just these three things you end up with just about the most basic of load tests you can get: the
+ability to send a bunch of requests to a page on your site with no form data, no login, or anything else. Perhaps this
+would be useful for a page that can just be gone to without logging in that is somewhat complex. The real power of 
+JMeter comes with setting up form data, logging in as a user and setting up test fragments and controllers. I am 
+thinking that I will perhaps blog a series of posts about getting more than the basics out of JMeter. Watch this space!
